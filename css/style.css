@@ -94,6 +94,12 @@ body{
     font-size: 20px;
     margin-bottom: 20px;
 }
+.formbox p span{
+    font-weight: 600;
+}
+.formbox p span:first-of-type{
+    color: #BD1E51;
+}
 .social{
     margin-right: 14px;
     font-size: 28px;
