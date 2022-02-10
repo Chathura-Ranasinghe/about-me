@@ -16,11 +16,13 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+.logo{
+    z-index: 999999;
+}
 .logo img{
     width: 70px;
     height: 70px;
     position:fixed;
-    z-index: 999999;
     top: 10px;
     left: 10px;
 }
@@ -165,7 +167,7 @@ body{
         width: 100%;
         padding: 40px;
         background: rgb(255 255 255 / 0.2);
-        margin: 50px;
+        margin: 40px;
         border-radius: 5px;
     } 
     .formbox p{
