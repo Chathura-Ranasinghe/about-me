@@ -7,6 +7,15 @@
     text-decoration: none;
     list-style: none;
 }
+#preloader{
+    background: url(../img/preloader.gif) no-repeat center;
+    background-color: #2d2d2d ;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+}
 body{
     background-color: #e4d935;
     position: relative;
@@ -126,7 +135,7 @@ body{
     justify-content: center;
     text-align: center;
     position: fixed;
-    background-color: #000000;
+    background-color: #2d2d2d ;
     opacity: 0.8;
     width: 50%;
     height: 70px;
