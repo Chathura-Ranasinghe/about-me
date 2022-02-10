@@ -145,8 +145,8 @@ body{
 }
 
 @media (max-width: 850px){
-    .logo img{
-        z-index: 99999;
+    .logo{
+        z-index: 999999;
     }
     .imgbx{
         position: absolute;
