@@ -12,10 +12,34 @@
     <div class="preloader">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    <div class="logo">
-        <img src="img/logo3.png">
+
+    <div class="header">
+        <img class="logo" src="img/logo3.png">
+        <label id="button" class="cont-btn">Contact me</label>
     </div>
+
     <div class="contentbox">
+        <div class='contact'>
+            <label class="close-btn bi bi-x-circle-fill"></label>
+            <form action="connect.php" method="post">
+                <div class='inputbox'>
+                    <span>Name</span>
+                    <input type="text" value="" id="name" name="name">
+                </div>
+                <div class='inputbox'>
+                    <span>E-mail </span>
+                    <input type="email" value="" id="mail" name="mail">
+                </div>
+                <div class='inputbox'>
+                    <span>Number</span>
+                    <input type="text" value="" id="numb" name="number">
+                </div>
+                <div class='inputbox'>
+                    <input type="submit" value="Submit" name="">
+                </div>
+            </form>
+        </div>
+
         <div class='formbox'>
             <h2><span>________</span>Hello<span> !</span></h2>
             <h1>I'm Chathura</h1>
@@ -32,10 +56,30 @@
             <a href="tel:+94 76 183 1436"><i class="bi bi-telephone-fill"></i>+94 76 183 1436</a>
             <a><i class="bi bi-person-workspace"></i>I work remotly</a>
         </div>
+
     </div>
+
     <div id="particles-js" class="imgbx">
         <img src="img/me1.jpg">
     </div>
+
+    <script>
+        document.getElementById("button").addEventListener("click",function(){
+            document.querySelector(".cont-btn").style.display = "none";
+            document.querySelector(".formbox").style.display = "none";
+            document.querySelector(".contact").style.display = "block";
+        })
+
+        document.querySelector(".close-btn").addEventListener("click",function(){
+            document.querySelector(".cont-btn").style.display = "block";
+            document.querySelector(".contact").style.display = "none";
+            document.querySelector(".formbox").style.display = "block";
+            document.getElementById('name').value = '';
+            document.getElementById('mail').value = '';
+            document.getElementById('numb').value = '';
+        })
+
+    </script>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/particles.js"></script>
@@ -46,5 +90,6 @@
             $(".preloader").fadeOut("slow");
         });
     </script>
+    
 </body>
 </html>

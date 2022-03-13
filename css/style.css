@@ -57,16 +57,33 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.logo{
-    z-index: 999999;
+.header{
+    position: fixed;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.logo img{
+.header .logo{
+    margin: 10px 0 0 10px;
     width: 70px;
     height: 70px;
-    position:fixed;
-    top: 10px;
-    left: 10px;
 }
+.header .cont-btn{
+    padding: 10px 20px;
+    border: 2px solid #490B3D;
+    border-radius: 5px;
+    color: #490B3D;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s linear
+}
+.header .cont-btn:hover{
+    background-color: rgba(189, 30, 81, 1);
+    color: #fff;
+    border: 2px solid #BD1E51 ;
+}
+
 .imgbx{
     position: relative;
     width: 50%;
@@ -97,6 +114,78 @@ body{
     align-items: center;
     width: 50%;
     height: 100%;
+}
+
+.contact{
+    width: 75%;
+    display: none;
+}
+.contact .close-btn{
+    float: right;
+    font-size: 24px;
+    color: #490B3D;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact .close-btn:hover{
+    color: #BD1E51;
+}
+.contact h2{
+    font-size: 32px;
+    font-weight: 800;
+    color: #BD1E51;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.contact .inputbox{
+    margin-bottom: 20px;
+}
+.contact .inputbox span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #490B3D;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.contact .inputbox input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #490B3D;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: 30px;
+}
+/*input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}*/
+
+.contact .inputbox input[type="submit"]{
+    background: #BD1E51;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.contact .inputbox input[type="submit"]:hover{
+    background: #490B3D;
+}
+.contact .inputbox p{
+    color: #607d8b;
+}
+.contact .inputbox p a{
+    color: #0082e6;
 }
 .formbox{
     width: 75%;
@@ -143,6 +232,7 @@ body{
 .formbox p span:first-of-type{
     color: #BD1E51;
 }
+
 .social{
     margin-right: 14px;
     font-size: 28px;
@@ -167,7 +257,7 @@ body{
     justify-content: center;
     text-align: center;
     position: fixed;
-    background-color: #2d2d2d ;
+    background-color: #2d2d2d;
     opacity: 0.8;
     width: 50%;
     height: 70px;
@@ -186,8 +276,21 @@ body{
 }
 
 @media (max-width: 850px){
-    .logo{
+    .header{
         z-index: 999999;
+        width: 100%;
+        margin: 10px;
+    }
+    .header .logo{
+        margin: 0;
+        width: 70px;
+        height: 70px;
+    }
+    .header .cont-btn{
+        padding: 10px 20px;
+        margin-right: 20px;
+        border: 2px solid #fff;
+        color: #fff;
     }
     .imgbx{
         position: absolute;
@@ -226,7 +329,7 @@ body{
     }
 }
 @media (max-width: 400px){
-    .logo img{
+    .header .logo{
         width: 50px;
         height: 50px;
     }
@@ -270,7 +373,6 @@ body{
 @media (max-width: 300px){
 
     .formbox{
-        width: 100%;
         padding: 15px 25px 15px 25px;
         margin:10px 0 0 0;
     }
