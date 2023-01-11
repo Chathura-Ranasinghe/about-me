@@ -142,7 +142,20 @@ body{
 .contact .inputbox{
     margin-bottom: 20px;
 }
-.contact .inputbox input,button,textarea{
+.contact .inputbox input,button{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #490B3D;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.contact .inputbox textarea{
     width: 100%;
     resize: none;
     padding: 10px 20px;
