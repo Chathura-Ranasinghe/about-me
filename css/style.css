@@ -142,16 +142,9 @@ body{
 .contact .inputbox{
     margin-bottom: 20px;
 }
-.contact .inputbox span{
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: inline-block;
-    color: #490B3D;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-.contact .inputbox input{
+.contact .inputbox input,button,textarea{
     width: 100%;
+    resize: none;
     padding: 10px 20px;
     outline: none;
     font-weight: 400;
@@ -162,6 +155,7 @@ body{
     background-color: white;
     border-radius: 30px;
 }
+
 /*input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -169,7 +163,7 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }*/
 
-.contact .inputbox input[type="submit"]{
+.contact .inputbox button[type="submit"]{
     background: #BD1E51;
     color: #fff;
     border: none;
@@ -178,7 +172,7 @@ input:-webkit-autofill:active {
     cursor: pointer;
     transition: all 0.3s linear;
 }
-.contact .inputbox input[type="submit"]:hover{
+.contact .inputbox button[type="submit"]:hover{
     background: #490B3D;
 }
 .contact .inputbox p{

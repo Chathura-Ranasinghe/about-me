@@ -23,19 +23,17 @@
             <label class="close-btn bi bi-x-circle-fill"></label>
             <form action="" id="contactForm" method="post">
                 <div class='inputbox'>
-                    <span>Name</span>
-                    <input type="text" value="" id="name" name="name">
+                    <input type="text"id="name" placeholder="Your name" required>
                 </div>
                 <div class='inputbox'>
-                    <span>E-mail </span>
-                    <input type="email" value="" id="mail" name="mail">
+                    <input type="email" id="emailid" placeholder="Your email" required>
                 </div>
                 <div class='inputbox'>
-                    <span>Number</span>
-                    <input type="text" value="" id="numb" name="number">
+                    <textarea id="msgContent" cols="30" rows="5" placeholder="Message" required></textarea>
+                    <!--<input type="text" id="msg" placeholder="Message">-->
                 </div>
                 <div class='inputbox'>
-                    <input type="submit" value="Submit" name="">
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -76,12 +74,14 @@
             document.querySelector(".contact").style.display = "none";
             document.querySelector(".formbox").style.display = "block";
             document.getElementById('name').value = '';
-            document.getElementById('mail').value = '';
-            document.getElementById('numb').value = '';
+            document.getElementById('emailid').value = '';
+            document.getElementById('msgContent').value = '';
         })
 
     </script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="js/mail.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
