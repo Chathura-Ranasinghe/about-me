@@ -1,12 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDgDgB7Q8dhvtmJkrczth3zHguvfDLCjIA",
-    authDomain: "contactform-portfolio-6a68a.firebaseapp.com",
-    databaseURL: "https://contactform-portfolio-6a68a-default-rtdb.firebaseio.com",
-    projectId: "contactform-portfolio-6a68a",
-    storageBucket: "contactform-portfolio-6a68a.appspot.com",
-    messagingSenderId: "736669903052",
-    appId: "1:736669903052:web:9a3ee536e4132ef4283a69",
-
+    apiKey: "AIzaSyD84R13GHDx7fmvJPasMUm52im32wMvp4s",
+    authDomain: "about-me-cdbfd.firebaseapp.com",
+    databaseURL: "https://about-me-cdbfd-default-rtdb.firebaseio.com",
+    projectId: "about-me-cdbfd",
+    storageBucket: "about-me-cdbfd.appspot.com",
+    messagingSenderId: "190761217483",
+    appId: "1:190761217483:web:ff4510237bb28130569a4e"
   };
 //intialize firebase
   firebase.initializeApp(firebaseConfig);
