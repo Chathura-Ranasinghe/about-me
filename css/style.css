@@ -76,7 +76,7 @@ body{
     color: #490B3D;
     cursor: pointer;
     font-weight: bolder;
-    transition: all 0.3s linear
+    transition: all 0.3s linear;
 }
 .header .cont-btn:hover{
     background-color: rgba(189, 30, 81, 1);
